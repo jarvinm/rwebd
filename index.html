@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="responsive/reponsive.css">
+</head>
+
+<body>
+  <!--Navigation-->
+  <div class="main-nav"></div>
+  <section id="landing-page"></section>
+  <section id="home"></section>
+  <section id="about"></section>
+  <section id="videos"></section>
+  <section id="the-hour"></section>
+  <section id="contact"></section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+
+  <script>
+    $(window).load(function () {
+      // BIND ON SCROLL
+      $(document).bind('scroll', function () {
+        var navHeight = $(window).height() - 70;
+        if ($(window).scrollTop() > navHeight) {
+          $('.main-nav').addClass('fixed');
+        } else {
+          $('.main-nav').removeClass('fixed');
+        }
+      });
+
+      // LOAD TEMPLATES
+      $('.main-nav').load('templates/navigator.html');
+      $('#landing-page').load('templates/landing.html');
+      $('#home').load('templates/home.html');
+      $('#about').load('templates/about.html');
+      $('#videos').load('templates/videos.html');
+      $('#the-hour').load('templates/the-hour.html');
+      $('#contact').load('templates/contact.html');
+    });
+  </script>
+</body>
+
+</html>

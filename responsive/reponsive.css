@@ -1,0 +1,34 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .main-nav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+  }
+  .main-nav nav li {
+    display: block;
+  }
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
