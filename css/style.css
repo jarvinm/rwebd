@@ -73,6 +73,10 @@ h1 {
     display: block;
 }
 
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
