@@ -17,3 +17,12 @@
   text-decoration: none;
   color: #bec3c7;
 }
+
+/* This class is added on scroll */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 1;
+}

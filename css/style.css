@@ -98,24 +98,6 @@ table {
 
 /*My Style*/
 
-
-/* This class is added on scroll */
-@import url("navigator.css");
-
-.fixed {
-  position: fixed;
-  top: 0;
-  height: 70px;
-  z-index: 1;
-}
-
 section {
   height: 100vh;
 }
-
-@import url("landing.css");
-@import url("home.css");
-@import url("about.css");
-@import url("videos.css");
-@import url("the-hour.css");
-@import url("contact.css");

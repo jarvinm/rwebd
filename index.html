@@ -7,6 +7,13 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="responsive/reponsive.css">
+  <link rel="stylesheet" href="css/navigator.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/videos.css" />
+  <link rel="stylesheet" href="css/the-hour.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
 
 <body>
@@ -24,7 +31,7 @@
   <script>
     $(window).load(function () {
       // BIND ON SCROLL
-      $(document).bind('scroll', function () {
+      $(window).bind('scroll', function () {
         var navHeight = $(window).height() - 70;
         if ($(window).scrollTop() > navHeight) {
           $('.main-nav').addClass('fixed');
