@@ -5,7 +5,9 @@
 
 @media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 900px) {
+  
+}
 
 /* Small Devices, Tablets */
 
@@ -17,13 +19,30 @@
   .container {
     width: 100%;
   }
+  
+  #landing-page {
+    height: 400px;
+  }
+  
+  .menu-btn {
+    display: block;
+  }
+  
   .main-nav {
     position: fixed;
     height: 100%;
-    width: 300px;
+    width: 270px;
+    left: -270px;
+    border-right: 1px solid #000;
   }
+  
+  .main-nav.active {
+    left: 0px;
+  }
+  
   .main-nav nav li {
     display: block;
+    text-align: left;
   }
 
 }

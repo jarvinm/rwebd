@@ -6,7 +6,7 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="responsive/reponsive.css">
+
   <link rel="stylesheet" href="css/navigator.css" />
   <link rel="stylesheet" href="css/landing.css" />
   <link rel="stylesheet" href="css/home.css" />
@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="css/videos.css" />
   <link rel="stylesheet" href="css/the-hour.css" />
   <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="responsive/reponsive.css">
 </head>
 
 <body>
   <!--Navigation-->
-  <div class="main-nav"></div>
+  <div id="main-nav"></div>
   <section id="landing-page"></section>
   <section id="home"></section>
   <section id="about"></section>
@@ -41,7 +42,7 @@
       });
 
       // LOAD TEMPLATES
-      $('.main-nav').load('templates/navigator.html');
+      $('#main-nav').load('templates/navigator.html');
       $('#landing-page').load('templates/landing.html');
       $('#home').load('templates/home.html');
       $('#about').load('templates/about.html');
@@ -50,6 +51,14 @@
       $('#contact').load('templates/contact.html');
     });
   </script>
+  
+  <script>
+    $(".menu-icon").on("click", function () {
+      $(this).toggleClass("open");
+      $(".menu-btn, .main-nav").toggleClass("active");
+    });
+  </script>
+
 </body>
 
 </html>

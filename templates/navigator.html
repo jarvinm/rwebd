@@ -1,9 +1,24 @@
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Vidoes</a></li>
-    <li><a href="#">The hour</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+<div class="menu-btn">
+  <div class="menu-icon">
+    <span></span>
+  </div>
+</div>
+<div class="main-nav">
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Vidoes</a></li>
+      <li><a href="#">The hour</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <script>
+    $(".menu-icon").on("click", function () {
+      $(this).toggleClass("open");
+      $(".menu-btn, .main-nav").toggleClass("active");
+    });
+  </script>
