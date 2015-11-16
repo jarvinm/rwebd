@@ -89,6 +89,7 @@
   bottom: 0;
   width: 100%;
   height: 70px;
+  margin-bottom: -70px;
   background: #121212;
   text-align: center;
       -webkit-transition: all 0.3s ease 0.3s;
@@ -97,7 +98,8 @@
 
 .main-nav nav li {
   display: inline-block;
-  padding: 24px 10px;
+  padding: 24px 15px;
+  margin: 0 10px;
 }
 
 .main-nav nav li a{
@@ -105,6 +107,16 @@
   text-decoration: none;
   color: #bec3c7;
 }
+
+.main-nav nav li.active {
+  background-color: #0c0c0c;
+  border-bottom: 5px solid #f1c40f;
+}
+
+.main-nav nav li.active a{
+  color: #f1c40f;
+}
+
 
 /* This class is added on scroll */
 

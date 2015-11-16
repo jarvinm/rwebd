@@ -1,8 +1,32 @@
 #landing-page {
+  height: 100vh;
+  position: relative;
+}
+
+#landing-page {
   background-color: #121212;
   text-align: center;
 }
 
 #landing-page img {
-  margin-top: 10%;
+  margin-top: 80px;
+}
+
+
+#landing-page p,
+#landing-page h1{
+  text-transform: uppercase;
+  color: #BDC3C7;
+}
+
+#landing-page h1{
+  font-size: 28px;
+}
+
+
+.btn-down-wrap{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -30px;
 }
