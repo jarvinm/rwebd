@@ -32,6 +32,7 @@
     position: fixed;
     height: 100%;
     width: 270px;
+    top: 0;
     left: -270px;
     border-right: 1px solid #000;
   }
@@ -43,6 +44,26 @@
   .main-nav nav li {
     display: block;
     text-align: left;
+    margin: 0;
+    float: none;
+  }
+  .main-nav nav li a {
+    line-height: 20px;
+    padding: 10px 25px;
+  }
+  
+  .main-nav nav li.active a{
+    background-color: #0c0c0c;
+    border-right: 5px solid #f1c40f;
+    border-bottom: none;
+  }
+  
+  .main-nav nav li.nav-logo {
+    float: none;
+  }
+  .nav-logo .logo-content {
+    display: block;
+    float: left;
   }
 
 }
