@@ -20,13 +20,13 @@
 }
 
 .contact_textbox{
-	height:94px;
+	height:87px;
 	margin-top:56px;
 }
 
 .contact_btn{
 	display: inline-block;
-	border:4px solid #d8d8d8;
+	border:3px solid #d8d8d8;
 	color:#d8d8d8;
 	text-decoration: none;
 	font-size:16px;
@@ -62,4 +62,45 @@
 	font-size:14px;
 	color:#7d7d7d;
 	margin-top:20px;
+	line-height: 16px;
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #contact{
+  	padding-top:0px;
+  }
+
+  .contact_textbox{
+  	margin-top: 10px;
+  }
+
+  .contact_btn{
+  	padding:12px;
+  }
+
+  .contact_title{
+  	margin-top:30px;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
 }

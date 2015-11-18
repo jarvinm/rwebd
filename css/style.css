@@ -17,6 +17,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -62,6 +63,11 @@ table {
     box-sizing: border-box;
 
 }
+
+h1 {
+    font-size: 34px;
+}
+
 .row:after {
     content: "";
     clear: both;

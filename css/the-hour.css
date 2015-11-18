@@ -1,0 +1,171 @@
+#the-hour{
+	width:100%;
+	height:100%;
+}
+
+.the-hour_container{
+	height:400px;
+	width:100%;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+
+.the-hour_container div.scrollableArea *{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.th_lists li{
+	vertical-align: top;
+	display:inline-block;
+	width:300px;
+	height: 400px;
+	margin-right:-4px;
+	cursor: pointer;
+	position:relative;
+}
+
+.th_lists li:hover .th_content{
+	background:#fafafa;
+}
+
+.th_lists li:hover .th_photo img{
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+.th_content, .th_photo{
+	width:100%;
+	height:200px;
+	transition:all .10s linear;
+	position:absolute;
+}
+
+.th_content{
+	background: #eaf0f0;
+	padding:25px;
+	z-index:1;
+	overflow: hidden;
+}
+
+.th_photo img{
+	width:100%;
+	-webkit-opacity: 0.9;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}
+
+.th_time{
+	font-size: 14px;
+	line-height: 16px;
+	color:#86868e;
+	display: block;
+	white-space: pre-wrap;
+	text-align: left;
+	padding-left: 30px;
+	margin:15px 0px 20px 0px;
+	position: relative;
+}
+
+.th_title{
+	font-size:22px;
+	color:#101415;
+	margin:15px 0px;
+	line-height: 28px;
+	white-space: pre-wrap;
+}
+
+.th_link{
+	display:inline-block;
+	position: absolute;
+	bottom:30px;
+	opacity: 0;
+	line-height: 16px;
+	border:3px solid #f1c40f;
+	color:#101415;
+	text-decoration: none;
+	font-size:14px;
+	margin-top: 25px;
+	padding:10px 0px;
+	width:250px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all .35s;
+}
+
+.th_link:hover{
+	background-color: #f1c40f;
+}
+
+.th_icon{
+	display:block;
+	position: absolute;
+	top:-5px;
+	left:0;
+	width:24px;
+	height: 24px;
+	background-image: url('../images/desktop_nav_icons24.png');
+	background-repeat: no-repeat;
+}
+
+.th_icon.hourglass{
+	background-position:0px -72px;
+}
+
+/* POSITIONING DIVS */
+.th_content.top, .th_photo.top{
+	top:0px;
+}
+
+.th_content.bottom, .th_photo.bottom{
+	bottom:0px;
+}
+
+/* TRANSITIONS */
+.th_lists li.active .th_content{
+	height:275px;
+	background:#fafafa;
+}
+
+.th_lists li.active .th_link, .th_lists li.active .th_photo img{
+	opacity: 1;
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  /*.th_lists li{
+	width:50%;
+	}*/
+
+	.th_icon{
+		top:4px;
+	}
+  
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
+}

@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/the-hour.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="responsive/reponsive.css">
+  <!-- Smooth Touch scroller plugin -->
+  <link rel="stylesheet" href="plugins/smoothDivScroll/smoothDivScroll.css">
 </head>
 
 <body>
@@ -29,7 +31,10 @@
   <section id="the-hour"></section>
   <section id="contact"></section>
 
-  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="plugins/smoothDivScroll/jquery-ui.custom.min.js"></script>
+  <script src="plugins/smoothDivScroll/jquery.kinetic.min.js"></script>
+  <script src="plugins/smoothDivScroll/jquery.smoothdivscroll.min.js"></script>
 
   <script>
     $(window).load(function () {
@@ -51,11 +56,22 @@
       $('#videos').load('templates/videos.html');
       $('#the-hour').load('templates/the-hour.html');
       $('#contact').load('templates/contact.html');
+
+      $(".menu-icon").on("click", function () {
+        $(this).toggleClass("open");
+        $(".menu-btn, .main-nav").toggleClass("active");
+      });
+
+      // Masonry Setup
+      // $('.home_container').isotope({
+      //   // options
+      //   itemSelector : '.home_item',
+      //   layoutMode: 'masonryHorizontal',
+      //   masonryHorizontal: {
+      //     rowHeight: 200
+      //   }
+      // });
     });
   </script>
-  
-
-
 </body>
-
 </html>

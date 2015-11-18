@@ -1,0 +1,67 @@
+<div class="the-hour_container">
+	<ul class="th_lists">
+		<li>
+			<div class="th_content top">
+				<span class="th_time"><i class="th_icon hourglass"></i>November 11, 2015 Wednesday</span>
+				<div class="th_title">What Everyone Should Know</div>
+				<a class="th_link" href="#">View</a>
+			</div>
+			<div class="th_photo bottom"><img src="images/articles/image3.jpg" /></div>
+		</li>
+		<li>
+			<div class="th_content bottom">
+				<span class="th_time"><i class="th_icon hourglass"></i>Thursday November 12, 2015</span>
+				<div class="th_title">Things you should never do after a self-defense shooting</div>
+				<a class="th_link" href="#">View</a>
+			</div>
+			<div class="th_photo top"><img src="images/articles/image9.jpg" /></div>
+		</li>
+		<li>
+			<div class="th_content top">
+				<span class="th_time"><i class="th_icon hourglass"></i>Friday November 13, 2015</span>
+				<div class="th_title">Claims that self-defense can only be under specific circumstances</div>
+				<a class="th_link" href="#">View</a>
+			</div>
+			<div class="th_photo bottom"><img src="images/articles/image7.jpg" /></div>
+		</li>
+		<li>
+			<div class="th_content bottom">
+				<span class="th_time"><i class="th_icon hourglass"></i>Sunday November 15, 2015</span>
+				<div class="th_title">Classes Teaches Women to Protect Themselves</div>
+				<a class="th_link" href="#">View</a>
+			</div>
+			<div class="th_photo top"><img src="images/articles/image5.jpg" /></div>
+		</li>
+		<li>
+			<div class="th_content top">
+				<span class="th_time"><i class="th_icon hourglass"></i>Monday November 16, 2015</span>
+				<div class="th_title">Arming Yourself of self-defense</div>
+				<a class="th_link" href="#">View</a>
+			</div>
+			<div class="th_photo bottom"><img src="images/articles/image6.jpg" /></div>
+		</li>
+		<li>
+			<div class="th_content bottom">
+				<span class="th_time"><i class="th_icon hourglass"></i>Wednesday November 18, 2015</span>
+				<div class="th_title">Simple self defense moves that could protect you in street crime</div>
+				<a class="th_link" href="#">View</a>
+			<div class="th_photo top"><img src="images/articles/image8.jpg" /></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+  
+  // The Hour touch scroll
+ //  $(".the-hour_container").smoothDivScroll({
+	// hotSpotScrolling: false,
+	// touchScrolling: true
+ //  });
+
+  // Bind click for The Hour links
+  $('ul.th_lists li').click(function(){
+  	$(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
+    // console.log('what the fudge!?');
+  });
+</script>
