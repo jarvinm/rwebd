@@ -2,6 +2,7 @@
 }
 
 .menu-btn {
+  background-color: #121212;
   display: none;
   position: fixed;
   left: 0px;
@@ -17,32 +18,19 @@
 .menu-icon {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
-  padding: 7px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border: 3px solid #fff;
-  border-radius: 500px;
+  width: 35px;
+  height: 28px;
+  margin: 23px 15px 24px;
   cursor: pointer;
 }
 
 
-/*
-.menu-icon:hover span {
-  background: #222;
-}
-.menu-icon:hover span:before, .menu-icon:hover span:after {
-  background: #222;
-}
-*/
-
 .menu-icon > span {
   position: absolute;
-  top: 46%;
+  top: 50%;
   display: block;
-  width: 60%;
-  height: 3px;
+  width: 100%;
+  height: 0.25em;
   background-color: #bbbbbb;
   border-radius: 3px;
   -webkit-transition: -webkit-transform 0.3s, background 0.25s ease;
@@ -62,46 +50,38 @@
 }
 
 .menu-icon > span:before {
-  -ms-transform: translateY(-7px);
-  -webkit-transform: translateY(-7px);
-  transform: translateY(-7px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .menu-icon > span:after {
-  -ms-transform: translateY(7px);
-  -webkit-transform: translateY(7px);
-  transform: translateY(7px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
 }
 
-
 /* OPENED */
-
-
-/*
 .menu-icon.open {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+
+.menu-icon.open > span:before {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
 }
-*/
-
-.menu-icon.open > span:before {
-  -webkit-transform: rotate(145deg);
-  -ms-transform: rotate(145deg);
-  transform: rotate(145deg);
-  width: 13px;
-  top: -4px;
-  left: 0;
-}
 
 .menu-icon.open > span:after {
-  -webkit-transform: rotate(35deg);
-  -ms-transform: rotate(35deg);
-  transform: rotate(35deg);
-  left: 0px;
-  width: 13px;
-  top: 4px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
 }
+
+
+
 
 .main-nav {
   position: absolute;
@@ -116,7 +96,7 @@
 }
 
 .main-nav nav {
-    max-width: 940px;
+    max-width: 1140px;
     text-align: center;
     margin: 0 auto;
     height: 115px;
@@ -126,26 +106,31 @@
 .main-nav nav li {
   float: left;
   margin-left: 3%;
+  width: 13%;
 }
 
 .main-nav nav li a {
+  display: block;
+  padding: 28px 25px 27px;
+  border-bottom: 7px solid #121212;
+  white-space: nowrap;
   text-transform: uppercase;
   text-decoration: none;
   color: #bec3c7;
-  display: block;
-  line-height: 62px;
-  padding: 24px 25px;
-  border-bottom: 5px solid #121212;
+}
+
+.main-nav nav li a:hover{
+  color: #f1c40f;
+  border-bottom: 7px solid #f1c40f;
 }
 
 .main-nav nav li.active a{
-  background-color: #0c0c0c;
-  border-bottom: 5px solid #f1c40f;
+/*  background-color: #0c0c0c;*/
+  border-bottom: 7px solid #f1c40f;
 }
 
 .main-nav nav li.active a {
   color: #f1c40f;
-
 }
 
 .main-nav nav li.nav-logo {
@@ -160,12 +145,15 @@
     float: left;
     border: 0;
 }
+.main-nav nav li.nav-logo a:hover {
+  border: 0;
+  color: initial;
+}
 
 
 .nav-logo img {
   float: left;
-  margin-right: 10px;
-  margin-top: 20px;
+  margin: 20px 20px;
 }
 
 .nav-logo .logo-content {
@@ -175,13 +163,16 @@
 
 .nav-logo .logo-content p {
   font-size: 12px;
+  font-weight: 300;
   line-height: 16px;
+  color: #727176;
 }
 
 .nav-logo .logo-content h1 {
   font-size: 18px;
-  line-height: 28px;
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bec3c7;
 }
 
 
@@ -193,3 +184,157 @@
   height: 115px;
   z-index: 1;
 }
+
+
+
+
+
+
+
+
+/* Sprite Nav Image */
+
+.nav-icons {
+  background: url(../images/desktop_nav_icons24.png) 0 0 no-repeat;
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.icon-home {
+background-position: 0 -2px;
+}
+
+.icon-about {
+background-position: 0 -26px;
+}
+
+.icon-video {
+background-position: 0 -50px;
+}
+
+.icon-the-hour {
+background-position: 0 -74px;
+}
+
+.icon-contact {
+background-position: 0 -98px;
+}
+
+.main-nav nav li a:hover .nav-icons {
+  background-position-x: -24px;
+}
+
+
+.main-nav nav li.active a .nav-icons {
+  background-position-x: -24px;
+/*  background-position: -30px 0;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .menu-btn {
+    display: block;
+  }
+  
+  .main-nav {
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    top: 0;
+    left: -270px;
+  }
+  
+  .main-nav.active {
+    overflow-y: auto;
+    left: 0px;
+  }
+
+  
+  .main-nav nav li {
+    display: block;
+    text-align: left;
+    margin: 0;
+    float: none;
+    width: 100%;
+  }
+  .main-nav nav li a {
+    line-height: 20px;
+    padding: 25px 15px;
+    border-bottom: 0;
+  }
+  
+  .main-nav nav li.active a{
+    background-color: #0c0c0c;
+    border-right: 7px solid #f1c40f;
+    border-bottom: none;
+  }
+  
+  .main-nav nav li.nav-logo {
+    float: none;
+    height: 75px;
+  }
+  .nav-logo img {
+    width: 40px;
+    margin: 12px 15px;
+  }
+  
+  .nav-logo .logo-content {
+    margin-top: 20px;
+    display: block;
+    float: left;
+  }
+  
+  .nav-icons {
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .main-nav nav li a:hover{
+    color: #f1c40f;
+    border-right: 7px solid #f1c40f;
+    border-bottom: 0;
+  }
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  
+}
+
