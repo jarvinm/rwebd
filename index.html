@@ -41,10 +41,14 @@
       // BIND ON SCROLL
       $(window).bind('scroll', function () {
         var navHeight = $(window).height();
+        $('.main-nav, .menu-btn').removeClass('fixed');
+        // FOR DESKTOP
         if ($(window).scrollTop() > navHeight) {
           $('.main-nav').addClass('fixed');
-        } else {
-          $('.main-nav').removeClass('fixed');
+        }
+        // FOR MOBILE
+        if ($(window).scrollTop() > navHeight - 115) {
+          $('.menu-btn').addClass('fixed');
         }
       });
 

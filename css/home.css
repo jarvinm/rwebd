@@ -111,6 +111,9 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+#home{
+	margin-top: 0px;
+}
   
 .home_items .hitem_wrapper{
 	padding-bottom: 75%;
