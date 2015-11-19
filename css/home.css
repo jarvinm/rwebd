@@ -9,9 +9,123 @@
 	min-width:100%;
 }
 
-.home_item{
-	width:300px;
-	height:200px;
-	border:1px solid #090909;
-	float:left;
+/*.hitem_wrapper{
+	width:25%;
+	padding-bottom: calc(25% * 0.6666);
+	position: relative;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.hitem_wrapper > div{
+	position: absolute;
+	top:0; left: 0; right: 0; bottom: 0;
+
+	border:1px solid #909090;
+}*/
+
+.home_items .hitem_wrapper{
+	padding-bottom: calc(33.33% * 0.75);
+	position: relative;
+	cursor: pointer;
+}
+
+.home_items .hitem_wrapper > div{
+	position: absolute;
+	top:0; left: 0; right: 0; bottom: 0;
+
+	overflow: hidden;
+}
+
+.hitem_wrapper > div > a, .hitem_wrapper > div > span, .hitem_wrapper > div > img{
+	position: absolute;
+	transition: all .15s ease-in-out;
+}
+
+.hitem_wrapper > div > img{
+	width:100%;
+	top:0;
+	left:0;
+/*	-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);*/
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+}
+
+.hitem_wrapper > div > a {
+	height:96px;
+	width: 96px;
+	background:url('../images/btn_play.png') no-repeat center center transparent;
+	top: -96px;
+	left:50%;
+	margin-left:-48px;
+	margin-top:-78px;
+}
+
+.hitem_wrapper > div > a:hover {
+	background-image: url('../images/btn_play_hover.png');
+}
+
+.hitem_wrapper > div > span {
+	bottom: -70px;
+	display: block;
+	width:100%;
+	/*background:#f1c40f;*/
+	background-color: rgba(0,0,0,0.775);
+	color:#e2e5ef;
+	font-size:16px;
+	line-height: 18px;
+	padding:25px;
+	height:70px;
+	text-overflow:ellipsis;
+}
+
+/* ACTIVE TRANSITION */
+.hitem_wrapper.active > div > img{
+	-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+			transform: scale(1.05);
+}
+
+.hitem_wrapper.active > div > a{
+	top:50%;
+}
+
+.hitem_wrapper.active > div > span {
+	bottom:0px;
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+.home_items .hitem_wrapper{
+	padding-bottom: 75%;
+}
+
+div.hitem_wrapper:nth-last-child(-n+2){
+	display: none;
+}
+  
+  
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
 }

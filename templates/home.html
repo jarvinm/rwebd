@@ -1,2 +1,55 @@
 <div class="home_container">
+	<div class="home_items">
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p1.jpg" />
+				<a href="javascript:;"></a>
+				<span>Outside Defense against Punches, Part 1 </span>
+			</div>
+		</div>
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p7.jpg" />
+				<a href="javascript:;"></a>
+				<span>How to Defend against a Gun to the Face</span>
+			</div>
+		</div>
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p5.jpg" />
+				<a href="javascript:;"></a>
+				<span>Self-Defense Pressure Points</span>
+			</div>
+		</div>
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p2.jpg" />
+				<a href="javascript:;"></a>
+				<span>Outside Defense against Punches, Part 2</span>
+			</div>
+		</div>
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p3.jpg" />
+				<a href="javascript:;"></a>
+				<span>How to Defend against Gun from the Rear</span>
+			</div>
+		</div>
+		<div class="hitem_wrapper col-4">
+			<div>
+				<img src="images/videos/p9.jpg" />
+				<a href="javascript:;"></a>
+				<span>How to Escape a Back Choke Hold</span>
+			</div>
+		</div>
+	</div>
 </div>
+
+<script type="text/javascript">
+  // Bind click for Home links
+  $('div.hitem_wrapper > div > img').click(function(){
+  	$(this).parent('div').parent('.hitem_wrapper').siblings().removeClass('active');
+    $(this).parent('div').parent('.hitem_wrapper').toggleClass('active');
+    // console.log('what the fudge!?');
+  });
+</script>
