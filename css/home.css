@@ -10,7 +10,6 @@
 	min-width:100%;
 }
 
-<<<<<<< Updated upstream
 /*.hitem_wrapper{
 	width:25%;
 	padding-bottom: calc(25% * 0.6666);
@@ -134,13 +133,4 @@ div.hitem_wrapper:nth-last-child(-n+2){
 @media only screen and (max-width: 480px) {
 
 }
-=======
-.home_item{
-	width:300px;
-	height:200px;
-	border:1px solid #090909;
-	float:left;
-}
 
-
->>>>>>> Stashed changes
