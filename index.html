@@ -75,6 +75,28 @@
       //     rowHeight: 200
       //   }
       // });
+      $('#grwebd-submit').click(function(){
+        var formItems = $("form#myform").serialize();
+        
+        $.ajax({
+          type: "POST",
+          url: "mailer.php",
+          data: formItems,
+          beforeSend : function(){
+          $(".magicLoader").stop().fadeIn(250);
+          },
+          success: function(result){
+          //alert(result);
+          var message = "<span class=\"glyphicon glyphicon-remove-circle\"></span>Message sending failed";
+          if(result == "success"){
+            $("input, textarea").val("");
+            message = "<span class=\"glyphicon glyphicon-ok-circle\"></span>Message sent";
+          }
+          $(".system-message").html(message).fadeIn(250).delay(2250).fadeOut(500);
+          $(".magicLoader").stop().fadeOut(250);
+          }
+        });
+      });
     });
   </script>
 </body>
