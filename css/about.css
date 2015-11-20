@@ -1,6 +1,11 @@
-#about {
+.text-hide {
+  color: transparent;
+}
 
-/*  background: url(../images/) 0 0 no-repeat;*/
+#about {
+  background: url(../images/bgAbout-sm.jpg) no-repeat 50% 70px fixed; 
+  background-size: cover;
+
   background-color: #141414;
 }
 
@@ -65,3 +70,37 @@
   background-color: #efc60c;
   color: #0a0a0a;
 }
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .about-bg {
+    padding: 0px;
+  }
+  #about {
+  background: url(../images/bgAbout-sm.jpg) no-repeat 35% 0px scroll; 
+  background-size: auto 650px, cover;
+  background-color: #141414;
+}
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  
+}
+
