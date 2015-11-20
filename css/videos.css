@@ -278,7 +278,7 @@ iframe {
    $Gallery
    ========================================================================== */
 .gallery-items {
-  padding: 0 15px;
+  padding: 0;
 }
 
 .gallery-title {
@@ -290,7 +290,7 @@ iframe {
 }
 
 .gallery-item {
-  padding: 0.31em 0 0.62em;
+  padding: 10px 15px;
   -webkit-transition: background 0.25s;
           transition: background 0.25s;
 }
