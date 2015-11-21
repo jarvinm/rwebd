@@ -3,8 +3,8 @@
 }
 
 #about {
-  background: url(../images/bgAbout-sm.jpg) no-repeat 50% 70px fixed; 
-  background-size: cover;
+  background: url(../images/bgAbout.jpg) no-repeat center center fixed; 
+  background-size: 100%;
 
   background-color: #141414;
 }

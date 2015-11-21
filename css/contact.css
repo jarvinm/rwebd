@@ -4,6 +4,36 @@
 	width:100%;
 	min-height:350px;
 	height:100%;
+	position: relative;
+}
+
+.contact_message{
+	display:none;
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:300px;
+	height:70px;
+	padding:20px;
+	margin-top:-35px;
+	margin-left:-150px;
+	border:3px solid #f1c40f;
+	background-color:rgba(0,0,0,0.75);
+	font-size:20px;
+	color:#f1c40f;
+	text-align: center;
+}
+
+.contact_loader{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.25);
+	background-image: url('../images/preloader.gif');
+	background-position: center center;
+	display: none;
 }
 
 .contact_title{
@@ -20,7 +50,7 @@
 }
 
 .contact_textbox{
-	height:87px;
+	height:94px;
 	margin-top:56px;
 }
 
