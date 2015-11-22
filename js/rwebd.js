@@ -41,7 +41,7 @@
         $('#'+navID).parent('li').addClass('active');
 
       });
-
+    
       $(".navLink").click(function(){
         var url = $(this).data('url');
         $('html, body').animate({
@@ -151,10 +151,20 @@
           },
           success: function(result){
             var message = "Message sending failed";
+            var messages = {
+              "success" : "Message Sent",
+              "error1" : "Error!",
+              "error2" : "Please fill up the form",
+              "error3" : "Email not valid!"
+            }
+            if(messages[result]){
+              message = messages[result];
+            }
+
             if(result == "success"){
               $("input, textarea").val("");
-              message = "Message sent";
             }
+            
             $(".contact_message").html(message).fadeIn(250).delay(2250).fadeOut(500);
             $('.contact_loader').stop().delay(500).fadeOut(150);
           }
